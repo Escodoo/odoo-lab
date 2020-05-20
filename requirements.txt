@@ -152,7 +152,7 @@ vobject==0.9.3
 wcwidth==0.1.9
 webcolors==1.10
 webencodings==0.5.1
-Werkzeug==0.11.15
+Werkzeug==0.15.3
 whichcraft==0.6.1
 workalendar==7.1.1
 wrapt==1.12.1
