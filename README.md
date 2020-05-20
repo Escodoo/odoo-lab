@@ -9,9 +9,7 @@ Installation
 
 `chmod +x setup.sh`
 
-`./setup.sh`
-
-If you already have postgresql installed, please comment the lines responsible for installing it in the setup.sh file
+`./setup.sh` (If you already have postgresql installed, please comment the lines responsible for installing it in the setup.sh file)
 
 `git checkout -b 12.0-new-branch`
 
