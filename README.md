@@ -18,7 +18,7 @@ Installation
 
 `git checkout -b 12.0-new-branch`
 
-`virtualenv venv`
+`virtualenv venv`. (require python3)
 
 `source ./venv/bin/activate`
 
