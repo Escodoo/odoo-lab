@@ -12,6 +12,13 @@ export LANG=pt_BR.UTF-8
 sudo locale-gen pt_BR pt_BR.UTF-8
 sudo dpkg-reconfigure locales
 
+sudo apt-get install -y git
+sudo apt-get install -y wget
+sudo apt-get install -y gnupg
+sudo apt-get install -y gnupg1
+sudo apt-get install -y gnupg2
+
+wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
 #--------------------------------------------------
 # Instalando PostgreSQL Server
 #--------------------------------------------------
@@ -25,11 +32,6 @@ sudo service postgresql restart
 # Instalando Dependências
 #--------------------------------------------------
 echo -e "\n--- Instalando Python + pip --"
-sudo apt-get install -y git
-sudo apt-get install -y wget
-sudo apt-get install -y gnupg
-sudo apt-get install -y gnupg1
-sudo apt-get install -y gnupg2
 sudo apt-get install -y build-essential
 sudo apt-get install -y pkg-config
 sudo apt-get install -y python-pip
@@ -67,5 +69,3 @@ sudo apt-get install -y texlive-fonts-extra
 sudo apt-get install -y ure
 sudo apt-get install -y xfonts-75dpi
 sudo apt-get install -y xfonts-base
-
-
