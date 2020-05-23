@@ -17,6 +17,7 @@ sudo apt-get install -y wget
 sudo apt-get install -y gnupg
 sudo apt-get install -y gnupg1
 sudo apt-get install -y gnupg2
+sudo apt-get install -y zsh
 
 wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
 #--------------------------------------------------
@@ -24,8 +25,8 @@ wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-
 #--------------------------------------------------
 echo -e "\n---- Instalando PostgreSQL Server ----"
 sudo apt-get update
-sudo apt-get install postgresql -y
-sudo apt install postgis -y
+sudo apt-get install postgresql-12 -y
+#sudo apt install postgis -y
 sudo service postgresql restart
 
 #--------------------------------------------------
