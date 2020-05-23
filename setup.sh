@@ -11,7 +11,6 @@ export LANG=pt_BR.UTF-8
 
 sudo locale-gen pt_BR pt_BR.UTF-8
 sudo dpkg-reconfigure locales
-sudo apt-get install wget git gnupg gnupg1 gnupg2 -y
 
 #--------------------------------------------------
 # Instalando PostgreSQL Server
@@ -26,16 +25,47 @@ sudo service postgresql restart
 # Instalando Dependências
 #--------------------------------------------------
 echo -e "\n--- Instalando Python + pip --"
-sudo apt-get install -y python-dev python3 python3-dev python3-pip python3-suds python3-lxml
-sudo apt-get install -y libxml2-dev
-sudo apt-get install -y libxslt1-dev
+sudo apt-get install -y git
+sudo apt-get install -y wget
+sudo apt-get install -y gnupg
+sudo apt-get install -y gnupg1
+sudo apt-get install -y gnupg2
+sudo apt-get install -y build-essential
+sudo apt-get install -y pkg-config
+sudo apt-get install -y python-pip
+sudo apt-get install -y python-dev
+sudo apt-get install -y python3
+sudo apt-get install -y python3-dev
+sudo apt-get install -y zlib1g-dev
+sudo apt-get install -y ldap-utils
+sudo apt-get install -y libevent-dev
+sudo apt-get install -y libffi-dev
+sudo apt-get install -y libfreetype6-dev
+sudo apt-get install -y libjpeg-dev
 sudo apt-get install -y libldap2-dev
+sudo apt-get install -y libpng-dev
+sudo apt-get install -y libpq-dev
+sudo apt-get install -y libreoffice-java-common
+sudo apt-get install -y libreoffice-writer
 sudo apt-get install -y libsasl2-dev
-sudo apt-get install -y fonts-symbola node-clean-css node-less texlive-fonts-extra
+sudo apt-get install -y libsnmp-dev
+sudo apt-get install -y libssl-dev
+sudo apt-get install -y libxml2-dev
+sudo apt-get install -y libxmlsec1-dev
+sudo apt-get install -y libxslt-dev
+sudo apt-get install -y libxslt1-dev
+sudo apt-get install -y python3-lxml
+sudo apt-get install -y python3-pip
+sudo apt-get install -y python3-suds
+sudo apt-get install -y default-jre
+sudo apt-get install -y expect-dev
+sudo apt-get install -y fonts-symbola
+sudo apt-get install -y node-clean-css
+sudo apt-get install -y node-less
 sudo apt-get install -y npm
-sudo apt-get install -y libsasl2-dev libxmlsec1-dev libxml2-dev ldap-utils libxslt-dev libldap2-dev libssl-dev libsnmp-dev libffi-dev libevent-dev libpq-dev
-sudo apt-get install -y libpng-dev libjpeg-dev libfreetype6-dev
-sudo apt-get install -y expect-dev xfonts-75dpi xfonts-base default-jre ure libreoffice-java-common libreoffice-writer
-sudo apt-get install -y fonts-symbola node-clean-css node-less texlive-fonts-extra
-sudo apt-get install -y python3 python-dev python3-dev build-essential libssl-dev libffi-dev libxml2-dev libxslt1-dev zlib1g-dev python-pip
-sudo apt-get install -y libxmlsec1-dev pkg-config
+sudo apt-get install -y texlive-fonts-extra
+sudo apt-get install -y ure
+sudo apt-get install -y xfonts-75dpi
+sudo apt-get install -y xfonts-base
+
+

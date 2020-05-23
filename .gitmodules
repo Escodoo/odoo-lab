@@ -127,3 +127,6 @@
 [submodule "escodoo/stock-addons"]
 	path = escodoo/stock-addons
 	url = https://github.com/escodoo/stock-addons
+[submodule "escodoo/calendar-addons"]
+	path = escodoo/calendar-addons
+	url = https://github.com/escodoo/calendar-addons
