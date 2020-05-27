@@ -19,11 +19,12 @@ sudo apt-get install -y gnupg1
 sudo apt-get install -y gnupg2
 sudo apt-get install -y zsh
 
-wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
 #--------------------------------------------------
 # Instalando PostgreSQL Server
 #--------------------------------------------------
 echo -e "\n---- Instalando PostgreSQL Server ----"
+wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
+echo "deb http://apt.postgresql.org/pub/repos/apt/ `lsb_release -cs`-pgdg main" |sudo tee  /etc/apt/sources.list.d/pgdg.list
 sudo apt-get update
 sudo apt-get install postgresql-12 -y
 #sudo apt install postgis -y
@@ -32,7 +33,7 @@ sudo service postgresql restart
 #--------------------------------------------------
 # Instalando Dependências
 #--------------------------------------------------
-echo -e "\n--- Instalando Python + pip --"
+echo -e "\n--- Instalado Python + pip --"
 sudo apt-get install -y build-essential
 sudo apt-get install -y pkg-config
 sudo apt-get install -y python-pip
@@ -70,3 +71,20 @@ sudo apt-get install -y texlive-fonts-extra
 sudo apt-get install -y ure
 sudo apt-get install -y xfonts-75dpi
 sudo apt-get install -y xfonts-base
+sudo apt-get install -y swig
+sudo apt-get install -y virtualenv
+
+virtualenv -p python3 venv
+git submodule update --init --recursive
+
+sudo python -m pip install -r requirements.txt
+
+#python -m pip install -r ./core/requirements.txt
+#python -m pip install -r ./oca/reporting-engine/requirements.txt
+#python -m pip install -r ./oca/server-tools/requirements.txt
+#python -m pip install -r ./oca/account-financial-tools/requirements.txt
+#python -m pip install -r ./oca/l10n-brazil/requirements.txt
+#python -m pip install -r ./oca/web/requirements.txt
+#python -m pip install -r ./oca/server-ux/requirements.txt
+#python -m pip install -r ./oca/server-backend/requirements.txt
+#python -m pip install -r ./oca/field-service/requirements.txt
