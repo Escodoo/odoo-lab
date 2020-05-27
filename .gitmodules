@@ -1,129 +1,141 @@
-[submodule "oca/account-analytic"]
-	path = oca/account-analytic
+[submodule "user/oca/account-analytic"]
+	path = user/oca/account-analytic
 	url = https://github.com/oca/account-analytic
-[submodule "oca/account-budgeting"]
-	path = oca/account-budgeting
+[submodule "user/oca/account-budgeting"]
+	path = user/oca/account-budgeting
 	url = https://github.com/oca/account-budgeting
-[submodule "oca/account-closing"]
-	path = oca/account-closing
+[submodule "user/oca/account-closing"]
+	path = user/oca/account-closing
 	url = https://github.com/oca/account-closing
-[submodule "oca/account-financial-reporting"]
-	path = oca/account-financial-reporting
+[submodule "user/oca/account-financial-reporting"]
+	path = user/oca/account-financial-reporting
 	url = https://github.com/oca/account-financial-reporting
-[submodule "oca/account-financial-tools"]
-	path = oca/account-financial-tools
+[submodule "user/oca/account-financial-tools"]
+	path = user/oca/account-financial-tools
 	url = https://github.com/oca/account-financial-tools
-[submodule "oca/account-invoice-reporting"]
-	path = oca/account-invoice-reporting
+[submodule "user/oca/account-invoice-reporting"]
+	path = user/oca/account-invoice-reporting
 	url = https://github.com/oca/account-invoice-reporting
-[submodule "oca/account-invoicing"]
-	path = oca/account-invoicing
+[submodule "user/oca/account-invoicing"]
+	path = user/oca/account-invoicing
 	url = https://github.com/oca/account-invoicing
-[submodule "oca/account-payment"]
-	path = oca/account-payment
+[submodule "user/oca/account-payment"]
+	path = user/oca/account-payment
 	url = https://github.com/oca/account-payment
-[submodule "oca/bank-payment"]
-	path = oca/bank-payment
+[submodule "user/oca/bank-payment"]
+	path = user/oca/bank-payment
 	url = https://github.com/oca/bank-payment
-[submodule "oca/bank-statement-import"]
-	path = oca/bank-statement-import
+[submodule "user/oca/bank-statement-import"]
+	path = user/oca/bank-statement-import
 	url = https://github.com/oca/bank-statement-import
-[submodule "oca/brand"]
-	path = oca/brand
+[submodule "user/oca/brand"]
+	path = user/oca/brand
 	url = https://github.com/oca/brand
-[submodule "oca/commission"]
-	path = oca/commission
+[submodule "user/oca/commission"]
+	path = user/oca/commission
 	url = https://github.com/oca/commission
-[submodule "oca/contract"]
-	path = oca/contract
+[submodule "user/oca/contract"]
+	path = user/oca/contract
 	url = https://github.com/oca/contract
-[submodule "oca/crm"]
-	path = oca/crm
+[submodule "user/oca/crm"]
+	path = user/oca/crm
 	url = https://github.com/oca/crm
-[submodule "oca/currency"]
-	path = oca/currency
+[submodule "user/oca/currency"]
+	path = user/oca/currency
 	url = https://github.com/oca/currency
-[submodule "oca/field-service"]
-	path = oca/field-service
+[submodule "user/oca/field-service"]
+	path = user/oca/field-service
 	url = https://github.com/oca/field-service
-[submodule "oca/geospatial"]
-	path = oca/geospatial
+[submodule "user/oca/geospatial"]
+	path = user/oca/geospatial
 	url = https://github.com/oca/geospatial
-[submodule "oca/helpdesk"]
-	path = oca/helpdesk
+[submodule "user/oca/helpdesk"]
+	path = user/oca/helpdesk
 	url = https://github.com/oca/helpdesk
-[submodule "oca/hr"]
-	path = oca/hr
+[submodule "user/oca/hr"]
+	path = user/oca/hr
 	url = https://github.com/oca/hr
-[submodule "oca/l10n-brazil"]
-	path = oca/l10n-brazil
+[submodule "user/oca/l10n-brazil"]
+	path = user/oca/l10n-brazil
 	url = https://github.com/oca/l10n-brazil
-[submodule "oca/mis-builder"]
-	path = oca/mis-builder
+[submodule "user/oca/mis-builder"]
+	path = user/oca/mis-builder
 	url = https://github.com/oca/mis-builder
-[submodule "oca/partner-contact"]
-	path = oca/partner-contact
+[submodule "user/oca/partner-contact"]
+	path = user/oca/partner-contact
 	url = https://github.com/oca/partner-contact
-[submodule "oca/product-attribute"]
-	path = oca/product-attribute
+[submodule "user/oca/product-attribute"]
+	path = user/oca/product-attribute
 	url = https://github.com/oca/product-attribute
-[submodule "oca/project"]
-	path = oca/project
+[submodule "user/oca/project"]
+	path = user/oca/project
 	url = https://github.com/oca/project
-[submodule "oca/purchase-workflow"]
-	path = oca/purchase-workflow
+[submodule "user/oca/purchase-workflow"]
+	path = user/oca/purchase-workflow
 	url = https://github.com/oca/purchase-workflow
-[submodule "oca/queue"]
-	path = oca/queue
+[submodule "user/oca/queue"]
+	path = user/oca/queue
 	url = https://github.com/oca/queue
-[submodule "oca/reporting-engine"]
-	path = oca/reporting-engine
+[submodule "user/oca/reporting-engine"]
+	path = user/oca/reporting-engine
 	url = https://github.com/oca/reporting-engine
-[submodule "oca/sale-reporting"]
-	path = oca/sale-reporting
+[submodule "user/oca/sale-reporting"]
+	path = user/oca/sale-reporting
 	url = https://github.com/oca/sale-reporting
-[submodule "oca/sale-workflow"]
-	path = oca/sale-workflow
+[submodule "user/oca/sale-workflow"]
+	path = user/oca/sale-workflow
 	url = https://github.com/oca/sale-workflow
-[submodule "oca/server-backend"]
-	path = oca/server-backend
+[submodule "user/oca/server-backend"]
+	path = user/oca/server-backend
 	url = https://github.com/oca/server-backend
-[submodule "oca/server-tools"]
-	path = oca/server-tools
+[submodule "user/oca/server-tools"]
+	path = user/oca/server-tools
 	url = https://github.com/oca/server-tools
-[submodule "oca/server-ux"]
-	path = oca/server-ux
+[submodule "user/oca/server-ux"]
+	path = user/oca/server-ux
 	url = https://github.com/oca/server-ux
-[submodule "oca/stock-logistics-warehouse"]
-	path = oca/stock-logistics-warehouse
+[submodule "user/oca/stock-logistics-warehouse"]
+	path = user/oca/stock-logistics-warehouse
 	url = https://github.com/oca/stock-logistics-warehouse
-[submodule "oca/stock-logistics-workflow"]
-	path = oca/stock-logistics-workflow
+[submodule "user/oca/stock-logistics-workflow"]
+	path = user/oca/stock-logistics-workflow
 	url = https://github.com/oca/stock-logistics-workflow
-[submodule "oca/timesheet"]
-	path = oca/timesheet
+[submodule "user/oca/timesheet"]
+	path = user/oca/timesheet
 	url = https://github.com/oca/timesheet
-[submodule "oca/web"]
-	path = oca/web
+[submodule "user/oca/web"]
+	path = user/oca/web
 	url = https://github.com/oca/web
-[submodule "core"]
+[submodule "user/core"]
 	path = core
 	url = https://github.com/oca/ocb
-[submodule "escodoo/account-reports"]
-	path = escodoo/account-reports
+[submodule "user/escodoo/account-reports"]
+	path = user/escodoo/account-reports
 	url = https://github.com/escodoo/account-reports
-[submodule "escodoo/crm-addons"]
-	path = escodoo/crm-addons
+[submodule "user/escodoo/crm-addons"]
+	path = user/escodoo/crm-addons
 	url = https://github.com/escodoo/crm-addons
-[submodule "escodoo/fieldservice-addons"]
-	path = escodoo/fieldservice-addons
+[submodule "user/escodoo/fieldservice-addons"]
+	path = user/escodoo/fieldservice-addons
 	url = https://github.com/escodoo/fieldservice-addons
-[submodule "escodoo/helpdesk-addons"]
-	path = escodoo/helpdesk-addons
+[submodule "user/escodoo/helpdesk-addons"]
+	path = user/escodoo/helpdesk-addons
 	url = https://github.com/escodoo/helpdesk-addons
-[submodule "escodoo/sale-addons"]
-	path = escodoo/sale-addons
+[submodule "user/escodoo/sale-addons"]
+	path = user/escodoo/sale-addons
 	url = https://github.com/escodoo/sale-addons
-[submodule "escodoo/stock-addons"]
-	path = escodoo/stock-addons
+[submodule "user/escodoo/stock-addons"]
+	path = user/escodoo/stock-addons
 	url = https://github.com/escodoo/stock-addons
+[submodule "user/escodoo/calendar-addons"]
+	path = user/escodoo/calendar-addons
+	url = https://github.com/escodoo/calendar-addons
+[submodule "user/escodoo/project-addons"]
+	path = user/escodoo/project-addons
+	url = https://github.com/escodoo/project-addons
+[submodule "user/muk-it/muk_base"]
+	path = user/muk-it/muk_base
+	url = https://github.com/muk-it/muk_base
+[submodule "user/muk-it/muk_web"]
+	path = user/muk-it/muk_web
+	url = https://github.com/muk-it/muk_web

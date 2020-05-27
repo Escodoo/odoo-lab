@@ -1,5 +1,6 @@
 Installation
 ============
+`'sudo apt-get install -y git'`
 
 `git clone https://github.com/escodoo/odoo-lab`
 

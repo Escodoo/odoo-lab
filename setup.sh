@@ -11,31 +11,80 @@ export LANG=pt_BR.UTF-8
 
 sudo locale-gen pt_BR pt_BR.UTF-8
 sudo dpkg-reconfigure locales
-sudo apt-get install wget git gnupg gnupg1 gnupg2 -y
+
+sudo apt-get install -y git
+sudo apt-get install -y wget
+sudo apt-get install -y gnupg
+sudo apt-get install -y gnupg1
+sudo apt-get install -y gnupg2
+sudo apt-get install -y zsh
 
 #--------------------------------------------------
 # Instalando PostgreSQL Server
 #--------------------------------------------------
 echo -e "\n---- Instalando PostgreSQL Server ----"
+wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
+echo "deb http://apt.postgresql.org/pub/repos/apt/ `lsb_release -cs`-pgdg main" |sudo tee  /etc/apt/sources.list.d/pgdg.list
 sudo apt-get update
-sudo apt-get install postgresql -y
-sudo apt install postgis -y
+sudo apt-get install postgresql-12 -y
+#sudo apt install postgis -y
 sudo service postgresql restart
 
 #--------------------------------------------------
 # Instalando Dependências
 #--------------------------------------------------
-echo -e "\n--- Instalando Python + pip --"
-sudo apt-get install -y python-dev python3 python3-dev python3-pip python3-suds python3-lxml
-sudo apt-get install -y libxml2-dev
-sudo apt-get install -y libxslt1-dev
+echo -e "\n--- Instalado Python + pip --"
+sudo apt-get install -y build-essential
+sudo apt-get install -y pkg-config
+sudo apt-get install -y python-pip
+sudo apt-get install -y python-dev
+sudo apt-get install -y python3
+sudo apt-get install -y python3-dev
+sudo apt-get install -y zlib1g-dev
+sudo apt-get install -y ldap-utils
+sudo apt-get install -y libevent-dev
+sudo apt-get install -y libffi-dev
+sudo apt-get install -y libfreetype6-dev
+sudo apt-get install -y libjpeg-dev
 sudo apt-get install -y libldap2-dev
+sudo apt-get install -y libpng-dev
+sudo apt-get install -y libpq-dev
+sudo apt-get install -y libreoffice-java-common
+sudo apt-get install -y libreoffice-writer
 sudo apt-get install -y libsasl2-dev
-sudo apt-get install -y fonts-symbola node-clean-css node-less texlive-fonts-extra
+sudo apt-get install -y libsnmp-dev
+sudo apt-get install -y libssl-dev
+sudo apt-get install -y libxml2-dev
+sudo apt-get install -y libxmlsec1-dev
+sudo apt-get install -y libxslt-dev
+sudo apt-get install -y libxslt1-dev
+sudo apt-get install -y python3-lxml
+sudo apt-get install -y python3-pip
+sudo apt-get install -y python3-suds
+sudo apt-get install -y default-jre
+sudo apt-get install -y expect-dev
+sudo apt-get install -y fonts-symbola
+sudo apt-get install -y node-clean-css
+sudo apt-get install -y node-less
 sudo apt-get install -y npm
-sudo apt-get install -y libsasl2-dev libxmlsec1-dev libxml2-dev ldap-utils libxslt-dev libldap2-dev libssl-dev libsnmp-dev libffi-dev libevent-dev libpq-dev
-sudo apt-get install -y libpng-dev libjpeg-dev libfreetype6-dev
-sudo apt-get install -y expect-dev xfonts-75dpi xfonts-base default-jre ure libreoffice-java-common libreoffice-writer
-sudo apt-get install -y fonts-symbola node-clean-css node-less texlive-fonts-extra
-sudo apt-get install -y python3 python-dev python3-dev build-essential libssl-dev libffi-dev libxml2-dev libxslt1-dev zlib1g-dev python-pip
-sudo apt-get install -y libxmlsec1-dev pkg-config
+sudo apt-get install -y texlive-fonts-extra
+sudo apt-get install -y ure
+sudo apt-get install -y xfonts-75dpi
+sudo apt-get install -y xfonts-base
+sudo apt-get install -y swig
+sudo apt-get install -y virtualenv
+
+virtualenv -p python3 venv
+git submodule update --init --recursive
+
+sudo python -m pip install -r requirements.txt
+
+#python -m pip install -r ./core/requirements.txt
+#python -m pip install -r ./oca/reporting-engine/requirements.txt
+#python -m pip install -r ./oca/server-tools/requirements.txt
+#python -m pip install -r ./oca/account-financial-tools/requirements.txt
+#python -m pip install -r ./oca/l10n-brazil/requirements.txt
+#python -m pip install -r ./oca/web/requirements.txt
+#python -m pip install -r ./oca/server-ux/requirements.txt
+#python -m pip install -r ./oca/server-backend/requirements.txt
+#python -m pip install -r ./oca/field-service/requirements.txt

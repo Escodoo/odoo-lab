@@ -1,0 +1,15 @@
+[Unit]
+Description= Serviço Odoo
+After=network.target
+
+[Service]
+Type=simple
+User=odoo
+PIDFile=/var/run/odoo.pid
+WorkingDirectory=/home/odoo/production/
+ExecStart=/home/odoo/production/venv/bin/python3 ./core/odoo-bin -c odoo.conf
+KillMode=mixed
+Restart=on-abort
+
+[Install]
+WantedBy=default.target
