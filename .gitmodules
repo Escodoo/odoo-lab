@@ -139,3 +139,15 @@
 [submodule "user/muk-it/muk_web"]
 	path = user/muk-it/muk_web
 	url = https://github.com/muk-it/muk_web
+[submodule "user/oca/website"]
+	path = user/oca/website
+	url = https://github.com/oca/website
+[submodule "user/oca/knowledge"]
+	path = user/oca/knowledge
+	url = https://github.com/oca/knowledge
+[submodule "user/oca/server-brand"]
+	path = user/oca/server-brand
+	url = https://github.com/oca/server-brand
+[submodule "user/escodoo/account-addons"]
+	path = user/escodoo/account-addons
+	url = https://github.com/escodoo/account-addons
