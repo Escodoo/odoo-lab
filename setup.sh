@@ -19,6 +19,8 @@ sudo apt-get install -y gnupg1
 sudo apt-get install -y gnupg2
 sudo apt-get install -y zsh
 
+sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
+
 #--------------------------------------------------
 # Instalando PostgreSQL Server
 #--------------------------------------------------
@@ -75,16 +77,9 @@ sudo apt-get install -y swig
 sudo apt-get install -y virtualenv
 
 virtualenv -p python3 venv
-git submodule update --init --recursive
+
+source ./venv/bin/activate
 
 sudo python -m pip install -r requirements.txt
 
-#python -m pip install -r ./core/requirements.txt
-#python -m pip install -r ./oca/reporting-engine/requirements.txt
-#python -m pip install -r ./oca/server-tools/requirements.txt
-#python -m pip install -r ./oca/account-financial-tools/requirements.txt
-#python -m pip install -r ./oca/l10n-brazil/requirements.txt
-#python -m pip install -r ./oca/web/requirements.txt
-#python -m pip install -r ./oca/server-ux/requirements.txt
-#python -m pip install -r ./oca/server-backend/requirements.txt
-#python -m pip install -r ./oca/field-service/requirements.txt
+git submodule update --init --recursive
