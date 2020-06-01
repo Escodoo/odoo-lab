@@ -206,3 +206,7 @@
 	path = user/oca/manufacture
 	url = https://github.com/OCA/manufacture.git
 	branch = 12.0
+[submodule "user/oca/manufacture-reporting"]
+	path = user/oca/manufacture-reporting
+	url = https://github.com/OCA/manufacture-reporting.git
+	branch = 12.0
