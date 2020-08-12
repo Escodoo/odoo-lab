@@ -17,9 +17,6 @@ sudo apt-get install -y wget
 sudo apt-get install -y gnupg
 sudo apt-get install -y gnupg1
 sudo apt-get install -y gnupg2
-sudo apt-get install -y zsh
-
-sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
 
 #--------------------------------------------------
 # Instalando PostgreSQL Server
@@ -83,3 +80,9 @@ source ./venv/bin/activate
 sudo python -m pip install -r requirements.txt
 
 git submodule update --init --recursive
+
+#--------------------------------------------------
+# Instalando ZSH
+#--------------------------------------------------
+sudo apt-get install -y zsh
+sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
