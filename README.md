@@ -18,6 +18,6 @@ Installation
 
 `source ./venv/bin/activate`
 
-`python -m pip install requirements.txt`
+`python -m pip install -r requirements.txt`
 
 `./core/odoo-bin -c odoo.conf -d 12.0-new_database -i base` 
