@@ -1,4 +1,4 @@
-Installation
+Installation [REVISAR tanto este documento como os submodulos]
 ============
 `'sudo apt-get install -y git'`
 
