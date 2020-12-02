@@ -31,6 +31,9 @@ sudo apt-get install postgresql-12-postgis-3 -y
 #sudo apt-get install postgresql-12-postgis-3-scripts
 sudo service postgresql restart
 
+echo -e "\n---- Criando usuário "odoo" no PostgreSQL Server ----"
+sudo -u postgres psql -e --command "CREATE USER odoo WITH SUPERUSER"
+
 #--------------------------------------------------
 # Instalando Dependências
 #--------------------------------------------------
@@ -94,6 +97,18 @@ sudo -H pip3 install -r ./user/oca/server-tools/requirements.txt
 sudo -H pip3 install -r ./user/oca/server-backend/requirements.txt
 sudo -H pip3 install -r ./user/oca/reporting-engine/requirements.txt
 sudo -H pip3 install -r ./user/oca/l10n-brazil/requirements.txt
+
+echo -e "\n---- Preparando Configuração e Serviço Odoo ----"
+sudo mkdir /etc/odoo
+sudo cp odoo.conf /etc/odoo
+sudo cp odoo.service /lib/systemd/system
+
+echo -e "\n---- Startando serviço do Servidor Odoo ----"
+sudo systemctl enable odoo.service
+
+echo -e "\n---- Ativando serviço do Servidor Odoo no boot ----"
+sudo systemctl start odoo.service
+sudo systemctl status odoo.service
 
 #--------------------------------------------------
 # Instalando ZSH
