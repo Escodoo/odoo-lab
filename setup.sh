@@ -26,9 +26,7 @@ sudo apt-get install -y gnupg2
 #echo "deb http://apt.postgresql.org/pub/repos/apt/ `lsb_release -cs`-pgdg main" |sudo tee  /etc/apt/sources.list.d/pgdg.list
 sudo apt-get update
 sudo apt-get install postgresql-12 -y
-sudo apt-get install postgresql-12-postgis-3 -y
-#sudo apt-get install postgresql-12-postgis-3-dbgsym
-#sudo apt-get install postgresql-12-postgis-3-scripts
+sudo apt-get install postgresql-12-postgis-2.5 -y
 sudo service postgresql restart
 
 echo -e "\n---- Criando usuário "odoo" no PostgreSQL Server ----"
