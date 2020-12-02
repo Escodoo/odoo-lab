@@ -44,6 +44,7 @@ sudo apt-get install -y python3-dev
 sudo apt-get install -y zlib1g-dev
 sudo apt-get install -y ldap-utils
 sudo apt-get install -y libevent-dev
+sudo apt-get install -y libcups2-dev
 sudo apt-get install -y libffi-dev
 sudo apt-get install -y libfreetype6-dev
 sudo apt-get install -y libjpeg-dev
