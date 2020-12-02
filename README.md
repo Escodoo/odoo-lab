@@ -6,13 +6,11 @@ Installation [REVISAR tanto este documento como os submodulos]
 
 `cd odoo-lab`
 
-**For Ubuntu**
+**For Ubuntu 18.04**
 
 `chmod +x setup.sh`
 
 `./setup.sh` (If you already have postgresql installed, please comment the lines responsible for installing it in the setup.sh file)
-
-`git checkout -b 12.0-new-branch`
 
 `virtualenv venv`. (require python3)
 

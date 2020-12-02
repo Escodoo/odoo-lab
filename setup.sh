@@ -21,13 +21,18 @@ sudo apt-get install -y gnupg2
 #--------------------------------------------------
 # Instalando PostgreSQL Server
 #--------------------------------------------------
-echo -e "\n---- Instalando PostgreSQL Server ----"
-wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
-echo "deb http://apt.postgresql.org/pub/repos/apt/ `lsb_release -cs`-pgdg main" |sudo tee  /etc/apt/sources.list.d/pgdg.list
+#echo -e "\n---- Instalando PostgreSQL Server ----"
+#wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
+#echo "deb http://apt.postgresql.org/pub/repos/apt/ `lsb_release -cs`-pgdg main" |sudo tee  /etc/apt/sources.list.d/pgdg.list
 sudo apt-get update
 sudo apt-get install postgresql-12 -y
-#sudo apt install postgis -y
+sudo apt-get install postgresql-12-postgis-3 -y
+#sudo apt-get install postgresql-12-postgis-3-dbgsym
+#sudo apt-get install postgresql-12-postgis-3-scripts
 sudo service postgresql restart
+
+echo -e "\n---- Criando usuário "odoo" no PostgreSQL Server ----"
+sudo -u postgres psql -e --command "CREATE USER odoo WITH SUPERUSER"
 
 #--------------------------------------------------
 # Instalando Dependências
@@ -42,6 +47,7 @@ sudo apt-get install -y python3-dev
 sudo apt-get install -y zlib1g-dev
 sudo apt-get install -y ldap-utils
 sudo apt-get install -y libevent-dev
+sudo apt-get install -y libcups2-dev
 sudo apt-get install -y libffi-dev
 sudo apt-get install -y libfreetype6-dev
 sudo apt-get install -y libjpeg-dev
@@ -77,9 +83,32 @@ virtualenv -p python3 venv
 
 source ./venv/bin/activate
 
-sudo python -m pip install -r requirements.txt
+#sudo python -m pip install -r requirements.txt
 
 git submodule update --init --recursive
+
+echo -e "\n---- Instalando Requirements ----"
+sudo -H pip3 install -r ./user/oca/stock-logistics-barcode/requirements.txt
+sudo -H pip3 install -r ./user/oca/report-print-send/requirements.txt
+sudo -H pip3 install -r ./user/oca/field-service/requirements.txt
+sudo -H pip3 install -r ./user/oca/server-auth/requirements.txt
+sudo -H pip3 install -r ./user/oca/web/requirements.txt
+sudo -H pip3 install -r ./user/oca/server-tools/requirements.txt
+sudo -H pip3 install -r ./user/oca/server-backend/requirements.txt
+sudo -H pip3 install -r ./user/oca/reporting-engine/requirements.txt
+sudo -H pip3 install -r ./user/oca/l10n-brazil/requirements.txt
+
+echo -e "\n---- Preparando Configuração e Serviço Odoo ----"
+sudo mkdir /etc/odoo
+sudo cp odoo.conf /etc/odoo
+sudo cp odoo.service /lib/systemd/system
+
+echo -e "\n---- Startando serviço do Servidor Odoo ----"
+sudo systemctl enable odoo.service
+
+echo -e "\n---- Ativando serviço do Servidor Odoo no boot ----"
+sudo systemctl start odoo.service
+sudo systemctl status odoo.service
 
 #--------------------------------------------------
 # Instalando ZSH

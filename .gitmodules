@@ -1,3 +1,7 @@
+[submodule "user/core"]
+	path = core
+	url = https://github.com/oca/ocb
+	branch = 12.0
 [submodule "user/oca/account-analytic"]
 	path = user/oca/account-analytic
 	url = https://github.com/oca/account-analytic
@@ -50,18 +54,30 @@
 	path = user/oca/contract
 	url = https://github.com/oca/contract
 	branch = 12.0	
+[submodule "user/oca/credit-control"]
+	path = user/oca/credit-control
+	url = https://github.com/oca/credit-control
+	branch = 12.0
 [submodule "user/oca/crm"]
 	path = user/oca/crm
 	url = https://github.com/oca/crm
-	branch = 12.0	
+	branch = 12.0
 [submodule "user/oca/currency"]
 	path = user/oca/currency
 	url = https://github.com/oca/currency
-	branch = 12.0	
+	branch = 12.0
+[submodule "user/oca/dms"]
+	path = user/oca/dms
+	url = https://github.com/oca/dms
+	branch = 12.0
 [submodule "user/oca/field-service"]
 	path = user/oca/field-service
 	url = https://github.com/oca/field-service
-	branch = 12.0	
+	branch = 12.0
+[submodule "user/oca/fleet"]
+	path = user/oca/fleet
+	url = https://github.com/oca/fleet
+	branch = 12.0
 [submodule "user/oca/geospatial"]
 	path = user/oca/geospatial
 	url = https://github.com/oca/geospatial
@@ -73,15 +89,39 @@
 [submodule "user/oca/hr"]
 	path = user/oca/hr
 	url = https://github.com/oca/hr
-	branch = 12.0	
+	branch = 12.0
+[submodule "user/oca/knowledge"]
+	path = user/oca/knowledge
+	url = https://github.com/oca/knowledge
+	branch = 12.0
 [submodule "user/oca/l10n-brazil"]
 	path = user/oca/l10n-brazil
 	url = https://github.com/oca/l10n-brazil
 	branch = 12.0	
+[submodule "user/oca/maintenance"]
+	path = user/oca/maintenance
+	url = https://github.com/oca/maintenance
+	branch = 12.0
+[submodule "user/oca/management-system"]
+	path = user/oca/management-system
+	url = https://github.com/oca/management-system
+	branch = 12.0
+[submodule "user/oca/manufacture"]
+	path = user/oca/manufacture
+	url = https://github.com/OCA/manufacture
+	branch = 12.0
+[submodule "user/oca/manufacture-reporting"]
+	path = user/oca/manufacture-reporting
+	url = https://github.com/OCA/manufacture-reporting
+	branch = 12.0
+[submodule "user/oca/margin-analysis"]
+	path = user/oca/margin-analysis
+	url = https://github.com/oca/margin-analysis
+	branch = 12.0
 [submodule "user/oca/mis-builder"]
 	path = user/oca/mis-builder
 	url = https://github.com/oca/mis-builder
-	branch = 12.0	
+	branch = 12.0
 [submodule "user/oca/partner-contact"]
 	path = user/oca/partner-contact
 	url = https://github.com/oca/partner-contact
@@ -105,7 +145,15 @@
 [submodule "user/oca/reporting-engine"]
 	path = user/oca/reporting-engine
 	url = https://github.com/oca/reporting-engine
-	branch = 12.0	
+	branch = 12.0
+[submodule "user/oca/report-print-send"]
+	path = user/oca/report-print-send
+	url = https://github.com/oca/report-print-send
+	branch = 12.0
+[submodule "user/oca/rma"]
+	path = user/oca/rma
+	url = https://github.com/oca/rma
+	branch = 12.0
 [submodule "user/oca/sale-reporting"]
 	path = user/oca/sale-reporting
 	url = https://github.com/oca/sale-reporting
@@ -117,7 +165,11 @@
 [submodule "user/oca/server-backend"]
 	path = user/oca/server-backend
 	url = https://github.com/oca/server-backend
-	branch = 12.0	
+	branch = 12.0
+[submodule "user/oca/server-brand"]
+	path = user/oca/server-brand
+	url = https://github.com/oca/server-brand
+	branch = 12.0
 [submodule "user/oca/server-tools"]
 	path = user/oca/server-tools
 	url = https://github.com/oca/server-tools
@@ -125,7 +177,15 @@
 [submodule "user/oca/server-ux"]
 	path = user/oca/server-ux
 	url = https://github.com/oca/server-ux
-	branch = 12.0	
+	branch = 12.0
+[submodule "user/oca/social"]
+	path = user/oca/social
+	url = https://github.com/oca/social
+	branch = 12.0
+[submodule "user/oca/stock-logistics-barcode"]
+	path = user/oca/stock-logistics-barcode
+	url = https://github.com/oca/stock-logistics-barcode
+	branch = 12.0
 [submodule "user/oca/stock-logistics-warehouse"]
 	path = user/oca/stock-logistics-warehouse
 	url = https://github.com/oca/stock-logistics-warehouse
@@ -141,15 +201,27 @@
 [submodule "user/oca/web"]
 	path = user/oca/web
 	url = https://github.com/oca/web
-	branch = 12.0	
-[submodule "user/core"]
-	path = core
-	url = https://github.com/oca/ocb
-	branch = 12.0	
+	branch = 12.0
+[submodule "user/oca/website"]
+	path = user/oca/website
+	url = https://github.com/oca/website
+	branch = 12.0
+[submodule "user/oca/wms"]
+	path = user/oca/wms
+	url = https://github.com/oca/wms
+	branch = 12.0
+[submodule "user/escodoo/account-addons"]
+	path = user/escodoo/account-addons
+	url = https://github.com/escodoo/account-addons
+	branch = 12.0
 [submodule "user/escodoo/account-reports"]
 	path = user/escodoo/account-reports
 	url = https://github.com/escodoo/account-reports
 	branch = 12.0	
+[submodule "user/escodoo/calendar-addons"]
+	path = user/escodoo/calendar-addons
+	url = https://github.com/escodoo/calendar-addons
+	branch = 12.0
 [submodule "user/escodoo/crm-addons"]
 	path = user/escodoo/crm-addons
 	url = https://github.com/escodoo/crm-addons
@@ -169,11 +241,7 @@
 [submodule "user/escodoo/stock-addons"]
 	path = user/escodoo/stock-addons
 	url = https://github.com/escodoo/stock-addons
-	branch = 12.0	
-[submodule "user/escodoo/calendar-addons"]
-	path = user/escodoo/calendar-addons
-	url = https://github.com/escodoo/calendar-addons
-	branch = 12.0	
+	branch = 12.0
 [submodule "user/escodoo/project-addons"]
 	path = user/escodoo/project-addons
 	url = https://github.com/escodoo/project-addons
@@ -185,28 +253,8 @@
 [submodule "user/muk-it/muk_web"]
 	path = user/muk-it/muk_web
 	url = https://github.com/muk-it/muk_web
-	branch = 12.0	
-[submodule "user/oca/website"]
-	path = user/oca/website
-	url = https://github.com/oca/website
-	branch = 12.0	
-[submodule "user/oca/knowledge"]
-	path = user/oca/knowledge
-	url = https://github.com/oca/knowledge
-	branch = 12.0	
-[submodule "user/oca/server-brand"]
-	path = user/oca/server-brand
-	url = https://github.com/oca/server-brand
-	branch = 12.0	
-[submodule "user/escodoo/account-addons"]
-	path = user/escodoo/account-addons
-	url = https://github.com/escodoo/account-addons
 	branch = 12.0
-[submodule "user/oca/manufacture"]
-	path = user/oca/manufacture
-	url = https://github.com/OCA/manufacture.git
-	branch = 12.0
-[submodule "user/oca/manufacture-reporting"]
-	path = user/oca/manufacture-reporting
-	url = https://github.com/OCA/manufacture-reporting.git
+[submodule "user/oca/server-auth"]
+	path = user/oca/server-auth
+	url = https://github.com/oca/server-auth
 	branch = 12.0
