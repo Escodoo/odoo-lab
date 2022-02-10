@@ -40,3 +40,8 @@ pip install -r requirements.txt
 cd ../external-src/oca
 ../../../install-requirements.sh
 ```
+
+Para iniciar o Odoo volte para a pasta raiz odoo-lab e execute.
+```
+./odoo/src/odoo-bin -c odoo.conf -d odoo_lab
+```
